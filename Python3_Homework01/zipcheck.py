@@ -4,7 +4,7 @@ zipcheck.py: validation function for US zip code
 
 def zip_errors(z):
     """
-    Validate z as either NNNN or NNNN-NNNN.
+    Validate z as either NNNNN or NNNNN-NNNN.
     """
     l = len(z)
     if l not in(5,10):
