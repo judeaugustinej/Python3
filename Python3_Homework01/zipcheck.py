@@ -5,6 +5,11 @@ zipcheck.py: validation function for US zip code
 def zip_errors(z):
     """
     Validate z as either NNNNN or NNNNN-NNNN.
+    
+    :param z: US zip code which is a string
+    :returns: return_type -- description of the return value
+    :returns: None for a valid zip code
+    :raises: Attrib
     """
     l = len(z)
     if l not in(5,10):
